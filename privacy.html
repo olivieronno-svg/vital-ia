@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Politique de confidentialité – BilanAmbu</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         max-width: 760px; margin: 40px auto; padding: 0 20px; color: #222; line-height: 1.6; }
+  h1 { color: #0a1628; border-bottom: 2px solid #2563eb; padding-bottom: 8px; }
+  h2 { color: #2563eb; margin-top: 32px; }
+  h3 { color: #333; margin-top: 20px; }
+  a { color: #2563eb; }
+  code { background: #f0f4fa; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+  .updated { color: #666; font-size: 0.9em; }
+</style>
+</head>
+<body>
+
+<h1>Politique de confidentialité</h1>
+<p class="updated">Dernière mise à jour : 26 avril 2026</p>
+
+<p>
+La présente politique explique comment l'application <strong>BilanAmbu</strong>
+(« nous », « l'application ») collecte, utilise et protège les données personnelles
+de ses utilisateurs (« vous »).
+</p>
+
+<h2>1. Responsable du traitement</h2>
+<p>
+<strong>Éditeur :</strong> Onn-Off<br>
+<strong>Contact :</strong> <a href="mailto:onnoff1975@gmail.com">onnoff1975@gmail.com</a><br>
+<strong>Application :</strong> BilanAmbu (<code>fr.ambu.bilan</code>)
+</p>
+
+<h2>2. Données collectées</h2>
+
+<h3>2.1. Données saisies par l'utilisateur</h3>
+<ul>
+  <li>Fiches bilan ambulancier : identité du patient, antécédents, constantes, examen clinique XABCDE, gestes effectués, observations</li>
+  <li>Marqueurs lésionnels placés sur le schéma corporel</li>
+  <li>Scores cliniques calculés (Glasgow, APGAR, ABSI, Lund-Browder, Malinas, MNA, déshydratation)</li>
+  <li>Formations et recyclages : intitulé, dates, organisme, notes</li>
+  <li>Réglages : email par défaut, type de bouteille O₂, seuil de réserve, thème, rayons de recherche DAE/urgences</li>
+</ul>
+
+<h3>2.2. Données de localisation (optionnel)</h3>
+<ul>
+  <li>Position GPS précise — uniquement à l'ouverture des écrans <em>Défibrillateurs</em> ou <em>Urgences à proximité</em></li>
+  <li>Permission <code>ACCESS_FINE_LOCATION</code> demandée à l'usage, refusable à tout moment</li>
+  <li>La position est utilisée à la volée puis effacée — aucun historique conservé</li>
+</ul>
+
+<h3>2.3. Ce que nous ne collectons pas</h3>
+<ul>
+  <li>Aucune authentification, aucun compte utilisateur</li>
+  <li>Aucune synchronisation cloud (les données restent sur votre appareil)</li>
+  <li>Aucune publicité, aucun identifiant publicitaire</li>
+  <li>Aucun enregistrement audio permanent (le micro sert uniquement à la
+      reconnaissance vocale, traitée par l'OS Android)</li>
+  <li>Aucun télémétrie, aucun analytics, aucun crash report tiers</li>
+  <li>Aucune donnée de contacts, calendrier, photos ou stockage externe</li>
+</ul>
+
+<h2>3. Finalités du traitement</h2>
+<table style="border-collapse: collapse; width: 100%;">
+  <tr style="background: #f0f4fa;">
+    <th style="text-align: left; padding: 8px; border: 1px solid #ddd;">Donnée</th>
+    <th style="text-align: left; padding: 8px; border: 1px solid #ddd;">Finalité</th>
+    <th style="text-align: left; padding: 8px; border: 1px solid #ddd;">Base légale</th>
+  </tr>
+  <tr>
+    <td style="padding: 8px; border: 1px solid #ddd;">Fiches bilan, scores, marqueurs</td>
+    <td style="padding: 8px; border: 1px solid #ddd;">Aide à la saisie et consultation par l'utilisateur</td>
+    <td style="padding: 8px; border: 1px solid #ddd;">Exécution du service</td>
+  </tr>
+  <tr>
+    <td style="padding: 8px; border: 1px solid #ddd;">Formations / recyclages</td>
+    <td style="padding: 8px; border: 1px solid #ddd;">Suivi des dates d'expiration et notifications de rappel</td>
+    <td style="padding: 8px; border: 1px solid #ddd;">Exécution du service</td>
+  </tr>
+  <tr>
+    <td style="padding: 8px; border: 1px solid #ddd;">Position GPS</td>
+    <td style="padding: 8px; border: 1px solid #ddd;">Affichage des DAE et urgences à proximité</td>
+    <td style="padding: 8px; border: 1px solid #ddd;">Consentement explicite</td>
+  </tr>
+  <tr>
+    <td style="padding: 8px; border: 1px solid #ddd;">Audio (saisie vocale)</td>
+    <td style="padding: 8px; border: 1px solid #ddd;">Conversion parole → texte dans les champs</td>
+    <td style="padding: 8px; border: 1px solid #ddd;">Consentement explicite</td>
+  </tr>
+</table>
+
+<h2>4. Stockage et sécurité</h2>
+<ul>
+  <li><strong>Local exclusivement</strong> : toutes vos fiches, formations et réglages
+      sont stockés sur votre appareil dans une base SQLite Room privée et dans
+      <code>DataStore</code>, dans l'espace sandbox de l'application
+      (chiffrement au niveau du système Android selon votre configuration).</li>
+  <li><strong>Aucune sauvegarde cloud</strong> : la désinstallation de l'application
+      supprime définitivement toutes les données.</li>
+  <li><strong>Communications réseau</strong> : seules les requêtes vers l'API publique
+      OpenStreetMap (DAE et urgences à proximité) transitent par Internet,
+      en HTTPS chiffré.</li>
+</ul>
+
+<h2>5. Destinataires et sous-traitants</h2>
+<ul>
+  <li><strong>OpenStreetMap Foundation</strong> — fournisseur de l'API Overpass
+      utilisée pour récupérer la liste des DAE et services d'urgence à proximité
+      (la position GPS est envoyée à la requête, mais aucune autre donnée).
+      <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">wiki.osmfoundation.org/wiki/Privacy_Policy</a></li>
+  <li><strong>Google (Play Services Location, SpeechRecognizer)</strong> —
+      services natifs Android utilisés pour obtenir la position GPS et la
+      reconnaissance vocale. Aucune donnée n'est transmise à BilanAmbu par
+      ces services. Voir
+      <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+</ul>
+<p>
+<strong>L'éditeur (Onn-Off) ne reçoit aucune donnée.</strong> L'application
+n'envoie aucune information à un serveur contrôlé par l'éditeur.
+</p>
+
+<h2>6. Durée de conservation</h2>
+<ul>
+  <li>Fiches, formations, réglages : jusqu'à leur suppression par l'utilisateur ou la désinstallation de l'application</li>
+  <li>Position GPS : non conservée (utilisée à la volée)</li>
+  <li>Audio : non conservé par l'application</li>
+</ul>
+
+<h2>7. Vos droits (RGPD)</h2>
+<p>Conformément au Règlement Général sur la Protection des Données, vous avez le droit :</p>
+<ul>
+  <li>d'accéder à vos données — historique des fiches dans l'application</li>
+  <li>de les rectifier — édition libre de chaque fiche</li>
+  <li>de les effacer (droit à l'oubli) — suppression unitaire ou désinstallation</li>
+  <li>à la portabilité — export PDF de chaque fiche</li>
+  <li>de retirer votre consentement — révocation des permissions dans les paramètres Android</li>
+  <li>d'introduire une réclamation auprès de la CNIL
+      (<a href="https://www.cnil.fr">www.cnil.fr</a>)</li>
+</ul>
+
+<p>
+Pour toute question complémentaire, contactez-nous à
+<a href="mailto:onnoff1975@gmail.com">onnoff1975@gmail.com</a>.
+</p>
+
+<h2>8. Cookies et traceurs</h2>
+<p>
+L'application n'utilise <strong>aucun cookie ni traceur publicitaire</strong>.
+Aucun identifiant publicitaire (Advertising ID) n'est lu ni transmis.
+</p>
+
+<h2>9. Avertissement médical</h2>
+<p>
+BilanAmbu <strong>n'est pas un dispositif médical</strong> au sens de la directive
+93/42/CEE. C'est un outil personnel de saisie et d'aide-mémoire. Il ne remplace
+en aucun cas le jugement clinique d'un professionnel formé ni les protocoles
+officiels de votre service.
+</p>
+
+<h2>10. Modifications</h2>
+<p>
+Cette politique peut être modifiée. Toute modification substantielle sera
+notifiée dans l'application. La date en haut de cette page indique la dernière
+mise à jour.
+</p>
+
+<h2>11. Contact</h2>
+<p>
+Pour toute question : <a href="mailto:onnoff1975@gmail.com">onnoff1975@gmail.com</a>
+</p>
+
+</body>
+</html>
