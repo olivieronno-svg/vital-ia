@@ -1,175 +1,286 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Politique de confidentialité – BilanAmbu</title>
-<style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-         max-width: 760px; margin: 40px auto; padding: 0 20px; color: #222; line-height: 1.6; }
-  h1 { color: #0a1628; border-bottom: 2px solid #2563eb; padding-bottom: 8px; }
-  h2 { color: #2563eb; margin-top: 32px; }
-  h3 { color: #333; margin-top: 20px; }
-  a { color: #2563eb; }
-  code { background: #f0f4fa; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
-  .updated { color: #666; font-size: 0.9em; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VITAL I.A — Conditions Générales d'Utilisation et Politique de confidentialité</title>
+    <meta name="description" content="Conditions Générales d'Utilisation et Politique de confidentialité de l'application VITAL I.A — Assistant médical I.A pour secouristes et grand public.">
+    <style>
+        :root {
+            --brand-dark: #0E2236;
+            --brand-blue: #1565C0;
+            --brand-cyan: #00E5FF;
+            --warning: #FFC107;
+            --warning-bg: #FFF8E1;
+            --danger: #C62828;
+            --danger-bg: #FFEBEE;
+            --text: #1F2A37;
+            --muted: #607D8B;
+            --bg: #FFFFFF;
+            --bg-alt: #F5F8FB;
+            --border: #E0E5EB;
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.65;
+            color: var(--text);
+            background: var(--bg);
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 24px 20px 60px;
+        }
+        header {
+            border-bottom: 3px solid var(--brand-cyan);
+            padding-bottom: 20px;
+            margin-bottom: 28px;
+        }
+        h1 {
+            color: var(--brand-dark);
+            font-size: 1.8rem;
+            margin: 0 0 8px;
+            line-height: 1.25;
+        }
+        .meta {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+        h2 {
+            color: var(--brand-dark);
+            border-bottom: 2px solid var(--brand-cyan);
+            padding-bottom: 6px;
+            margin-top: 36px;
+            font-size: 1.3rem;
+        }
+        h3 {
+            color: var(--brand-blue);
+            font-size: 1.05rem;
+            margin-top: 22px;
+        }
+        p, li { margin: 0.6em 0; }
+        ul { padding-left: 22px; }
+        a { color: var(--brand-blue); }
+        a:hover { text-decoration: underline; }
+        .alert {
+            border-left: 5px solid var(--warning);
+            background: var(--warning-bg);
+            padding: 14px 18px;
+            margin: 18px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .alert strong { color: #6B5410; }
+        .alert.danger {
+            border-left-color: var(--danger);
+            background: var(--danger-bg);
+        }
+        .alert.danger strong { color: var(--danger); }
+        .toc {
+            background: var(--bg-alt);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin: 20px 0;
+        }
+        .toc h3 {
+            margin: 0 0 10px;
+            color: var(--brand-dark);
+        }
+        .toc ol { padding-left: 22px; margin: 0; }
+        .toc li { margin: 4px 0; }
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+        code {
+            background: var(--bg-alt);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
 
-<h1>Politique de confidentialité</h1>
-<p class="updated">Dernière mise à jour : 26 avril 2026</p>
+<header>
+    <h1>VITAL I.A — Conditions Générales d'Utilisation et Politique de confidentialité</h1>
+    <p class="meta">
+        Dernière mise à jour : <strong>10 mai 2026</strong> · Version 1.5.65<br>
+        Éditeur : <strong>Onn-Off Studio</strong> · Contact : <a href="mailto:onnoff1975@gmail.com">onnoff1975@gmail.com</a>
+    </p>
+</header>
 
-<p>
-La présente politique explique comment l'application <strong>BilanAmbu</strong>
-(« nous », « l'application ») collecte, utilise et protège les données personnelles
-de ses utilisateurs (« vous »).
-</p>
+<div class="alert danger">
+    <strong>⚕️ AVIS MÉDICAL IMPORTANT</strong><br>
+    VITAL I.A est un <strong>outil pédagogique et d'aide à la saisie</strong>. Il <strong>NE REMPLACE PAS</strong> :
+    <ul>
+        <li>une formation officielle aux premiers secours (PSC1, AFGSU, PSE)</li>
+        <li>le jugement clinique d'un professionnel de santé</li>
+        <li>les protocoles internes de votre service</li>
+        <li>l'avis, le diagnostic ou les soins d'un médecin</li>
+    </ul>
+    <strong>En cas d'urgence vitale, appelez immédiatement les services d'urgence : 15 (SAMU), 18 (Pompiers) ou 112 (urgence européenne).</strong> L'application n'a pas vocation à diagnostiquer, traiter ou prévenir une maladie. Les valeurs et alertes affichées sont strictement indicatives.
+</div>
 
-<h2>1. Responsable du traitement</h2>
-<p>
-<strong>Éditeur :</strong> Onn-Off<br>
-<strong>Contact :</strong> <a href="mailto:onnoff1975@gmail.com">onnoff1975@gmail.com</a><br>
-<strong>Application :</strong> BilanAmbu (<code>fr.ambu.bilan</code>)
-</p>
+<div class="toc">
+    <h3>Sommaire</h3>
+    <ol>
+        <li><a href="#preambule">Préambule et champ d'application</a></li>
+        <li><a href="#description">Description du service</a></li>
+        <li><a href="#acces">Accès à l'application et compte</a></li>
+        <li><a href="#licence">Licence d'utilisation</a></li>
+        <li><a href="#obligations">Obligations de l'utilisateur</a></li>
+        <li><a href="#medical">Avertissement médical détaillé</a></li>
+        <li><a href="#premium">Abonnement Premium</a></li>
+        <li><a href="#donnees">Données personnelles et confidentialité</a></li>
+        <li><a href="#geoloc">Géolocalisation et numéros d'urgence</a></li>
+        <li><a href="#photos">Photos et exports PDF</a></li>
+        <li><a href="#audio">Bande son et synthèse vocale</a></li>
+        <li><a href="#propriete">Propriété intellectuelle</a></li>
+        <li><a href="#responsabilite">Limitation de responsabilité</a></li>
+        <li><a href="#modifications">Modifications des CGU</a></li>
+        <li><a href="#resiliation">Résiliation</a></li>
+        <li><a href="#loi">Droit applicable et juridiction</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ol>
+</div>
 
-<h2>2. Données collectées</h2>
+<h2 id="preambule">1. Préambule et champ d'application</h2>
+<p>Les présentes Conditions Générales d'Utilisation (« CGU ») régissent l'utilisation de l'application mobile VITAL I.A (« l'Application »), éditée par Onn-Off Studio (« l'Éditeur »).</p>
+<p>L'utilisation de l'Application implique l'acceptation pleine, entière et sans réserve des présentes CGU. Si vous n'acceptez pas ces conditions, vous ne devez pas installer ni utiliser l'Application.</p>
 
-<h3>2.1. Données saisies par l'utilisateur</h3>
+<h2 id="description">2. Description du service</h2>
+<p>VITAL I.A est une application mobile destinée aux secouristes, ambulanciers, infirmiers, professionnels de santé et au grand public formé aux premiers secours. Elle propose :</p>
 <ul>
-  <li>Fiches bilan ambulancier : identité du patient, antécédents, constantes, examen clinique XABCDE, gestes effectués, observations</li>
-  <li>Marqueurs lésionnels placés sur le schéma corporel</li>
-  <li>Scores cliniques calculés (Glasgow, APGAR, ABSI, Lund-Browder, Malinas, MNA, déshydratation)</li>
-  <li>Formations et recyclages : intitulé, dates, organisme, notes</li>
-  <li>Réglages : email par défaut, type de bouteille O₂, seuil de réserve, thème, rayons de recherche DAE/urgences</li>
+    <li>des <strong>tutoriels guidés par voix</strong> pour la RCP/DAE et 16 gestes d'urgence (PLS, étouffement, hémorragie, AVC, etc.) ;</li>
+    <li>un <strong>tutoriel ECG 12 dérivations</strong> selon les protocoles CESU et AFRTAL ;</li>
+    <li>des <strong>outils cliniques</strong> : calculateur d'autonomie O₂, FC/FR tactile, 7 scores cliniques, chronomètre, calendrier de recyclages ;</li>
+    <li>un <strong>bilan ambulancier</strong> structuré avec saisie XABCDE, bilan lésionnel sur mannequins anatomiques, export PDF et envoi par email ;</li>
+    <li>la <strong>localisation</strong> des défibrillateurs et hôpitaux d'urgence à proximité ;</li>
+    <li>une <strong>interface multilingue</strong> dans 14 langues.</li>
 </ul>
 
-<h3>2.2. Données de localisation (optionnel)</h3>
+<h2 id="acces">3. Accès à l'application et compte</h2>
+<p>L'Application est téléchargeable gratuitement sur le Google Play Store. Aucun compte n'est requis pour utiliser les fonctions gratuites. Certaines fonctions avancées sont accessibles via un abonnement Premium (voir article 7).</p>
+<p>L'utilisation de l'Application nécessite un appareil Android 8.0 (API 26) ou supérieur, avec connexion Internet pour la géolocalisation et les mises à jour cartographiques.</p>
+
+<h2 id="licence">4. Licence d'utilisation</h2>
+<p>L'Éditeur concède à l'utilisateur une licence personnelle, non exclusive, non transférable, révocable, limitée à un usage strictement privé et non commercial, sur l'appareil personnel de l'utilisateur.</p>
+<p>Sont interdits sans accord écrit préalable de l'Éditeur :</p>
 <ul>
-  <li>Position GPS précise — uniquement à l'ouverture des écrans <em>Défibrillateurs</em> ou <em>Urgences à proximité</em></li>
-  <li>Permission <code>ACCESS_FINE_LOCATION</code> demandée à l'usage, refusable à tout moment</li>
-  <li>La position est utilisée à la volée puis effacée — aucun historique conservé</li>
+    <li>la reproduction, la copie, la modification, la traduction de tout ou partie de l'Application ;</li>
+    <li>l'ingénierie inverse, la décompilation ou la création d'œuvres dérivées ;</li>
+    <li>la revente, la location, le sous-licenciement de l'Application ;</li>
+    <li>l'utilisation de l'Application dans un cadre commercial ou de formation rémunérée sans accord ;</li>
+    <li>tout usage contraire à la loi ou aux bonnes mœurs.</li>
 </ul>
 
-<h3>2.3. Ce que nous ne collectons pas</h3>
+<h2 id="obligations">5. Obligations de l'utilisateur</h2>
+<p>L'utilisateur s'engage à :</p>
 <ul>
-  <li>Aucune authentification, aucun compte utilisateur</li>
-  <li>Aucune synchronisation cloud (les données restent sur votre appareil)</li>
-  <li>Aucune publicité, aucun identifiant publicitaire</li>
-  <li>Aucun enregistrement audio permanent (le micro sert uniquement à la
-      reconnaissance vocale, traitée par l'OS Android)</li>
-  <li>Aucun télémétrie, aucun analytics, aucun crash report tiers</li>
-  <li>Aucune donnée de contacts, calendrier, photos ou stockage externe</li>
+    <li>utiliser l'Application conformément à sa destination pédagogique et d'aide à la décision ;</li>
+    <li>ne pas se substituer à un professionnel de santé qualifié ;</li>
+    <li>vérifier les informations affichées avant tout acte clinique ;</li>
+    <li>respecter le secret médical et la confidentialité des patients lorsqu'il saisit un bilan ;</li>
+    <li>obtenir le consentement éclairé du patient avant toute prise de photo ou enregistrement de données.</li>
 </ul>
 
-<h2>3. Finalités du traitement</h2>
-<table style="border-collapse: collapse; width: 100%;">
-  <tr style="background: #f0f4fa;">
-    <th style="text-align: left; padding: 8px; border: 1px solid #ddd;">Donnée</th>
-    <th style="text-align: left; padding: 8px; border: 1px solid #ddd;">Finalité</th>
-    <th style="text-align: left; padding: 8px; border: 1px solid #ddd;">Base légale</th>
-  </tr>
-  <tr>
-    <td style="padding: 8px; border: 1px solid #ddd;">Fiches bilan, scores, marqueurs</td>
-    <td style="padding: 8px; border: 1px solid #ddd;">Aide à la saisie et consultation par l'utilisateur</td>
-    <td style="padding: 8px; border: 1px solid #ddd;">Exécution du service</td>
-  </tr>
-  <tr>
-    <td style="padding: 8px; border: 1px solid #ddd;">Formations / recyclages</td>
-    <td style="padding: 8px; border: 1px solid #ddd;">Suivi des dates d'expiration et notifications de rappel</td>
-    <td style="padding: 8px; border: 1px solid #ddd;">Exécution du service</td>
-  </tr>
-  <tr>
-    <td style="padding: 8px; border: 1px solid #ddd;">Position GPS</td>
-    <td style="padding: 8px; border: 1px solid #ddd;">Affichage des DAE et urgences à proximité</td>
-    <td style="padding: 8px; border: 1px solid #ddd;">Consentement explicite</td>
-  </tr>
-  <tr>
-    <td style="padding: 8px; border: 1px solid #ddd;">Audio (saisie vocale)</td>
-    <td style="padding: 8px; border: 1px solid #ddd;">Conversion parole → texte dans les champs</td>
-    <td style="padding: 8px; border: 1px solid #ddd;">Consentement explicite</td>
-  </tr>
-</table>
+<h2 id="medical">6. Avertissement médical détaillé</h2>
+<p>VITAL I.A <strong>n'est pas un dispositif médical</strong> au sens du Règlement européen 2017/745 (MDR). Elle ne porte pas de marquage CE médical.</p>
+<p>L'Application a une vocation strictement <strong>pédagogique, mnémotechnique et d'aide à la saisie</strong>. Elle ne fournit aucun diagnostic médical, aucun traitement et n'a pas vocation à se substituer aux conseils, examens ou traitements dispensés par un professionnel de santé.</p>
+<p>Les contenus pédagogiques (tutos RCP, gestes d'urgence, ECG, scores cliniques) sont basés sur des recommandations publiques (Croix-Rouge française, SFMU, ERC, CESU, AFRTAL) à la date de la dernière mise à jour. L'Éditeur ne garantit ni leur exhaustivité, ni leur stricte conformité aux dernières évolutions médicales. L'utilisateur est invité à se référer aux protocoles officiels de son service et à sa formation continue.</p>
+<p>Les calculs et alertes (autonomie O₂, scores cliniques, FC/FR, etc.) sont donnés à titre <strong>indicatif</strong>. L'utilisateur est seul responsable de la vérification des résultats avant tout usage clinique.</p>
 
-<h2>4. Stockage et sécurité</h2>
+<h2 id="premium">7. Abonnement Premium</h2>
+<p>Certaines fonctionnalités sont accessibles via un abonnement Premium souscrit via Google Play (Google Play Billing) :</p>
 <ul>
-  <li><strong>Local exclusivement</strong> : toutes vos fiches, formations et réglages
-      sont stockés sur votre appareil dans une base SQLite Room privée et dans
-      <code>DataStore</code>, dans l'espace sandbox de l'application
-      (chiffrement au niveau du système Android selon votre configuration).</li>
-  <li><strong>Aucune sauvegarde cloud</strong> : la désinstallation de l'application
-      supprime définitivement toutes les données.</li>
-  <li><strong>Communications réseau</strong> : seules les requêtes vers l'API publique
-      OpenStreetMap (DAE et urgences à proximité) transitent par Internet,
-      en HTTPS chiffré.</li>
+    <li>Calculateur d'autonomie O₂ ;</li>
+    <li>Fréquence cardiaque et respiratoire tactiles ;</li>
+    <li>7 scores cliniques ;</li>
+    <li>Chronomètre persistant ;</li>
+    <li>Tuto ECG 12 dérivations ;</li>
+    <li>Tuto gestes d'urgences (RCP/DAE + 16 gestes) ;</li>
+    <li>Géolocalisation des DAE et hôpitaux ;</li>
+    <li>Calendrier des recyclages ;</li>
+    <li>Historique illimité et export PDF.</li>
+</ul>
+<p>Le tarif est affiché dans l'Application au moment de la souscription. L'abonnement est <strong>auto-renouvelable</strong> selon les conditions de Google Play. La gestion (résiliation, remboursement) s'effectue exclusivement depuis votre compte Google Play : <a href="https://play.google.com/store/account/subscriptions">play.google.com/store/account/subscriptions</a>.</p>
+<p>Les conditions de remboursement applicables sont celles de Google Play Store. L'Éditeur ne procède à aucun remboursement direct.</p>
+
+<h2 id="donnees">8. Données personnelles et confidentialité</h2>
+<p>L'Éditeur respecte le Règlement Général sur la Protection des Données (RGPD, UE 2016/679) et la Loi Informatique et Libertés française.</p>
+
+<h3>8.1 Données stockées localement</h3>
+<p>Toutes les données saisies dans l'Application (bilans, identifiants patients, photos, paramètres) sont stockées <strong>exclusivement en local</strong> sur l'appareil de l'utilisateur, dans une base Room SQLite chiffrée par le système Android. <strong>Aucune donnée n'est transmise à un serveur de l'Éditeur.</strong></p>
+
+<h3>8.2 Données collectées par Google Play</h3>
+<p>L'achat d'un abonnement Premium est traité par Google Play (Google LLC). Les données de paiement sont régies par la <a href="https://policies.google.com/privacy">politique de confidentialité de Google</a>. L'Éditeur reçoit uniquement un statut d'abonnement (actif/expiré), sans informations bancaires.</p>
+
+<h3>8.3 Données techniques (analytics)</h3>
+<p>L'Application <strong>ne contient aucun traceur</strong>, aucune publicité, aucune analyse comportementale. Aucun SDK tiers (Firebase Analytics, Crashlytics, etc.) n'est intégré.</p>
+
+<h3>8.4 Vos droits RGPD</h3>
+<p>Comme aucune donnée personnelle n'est collectée par l'Éditeur, l'exercice des droits d'accès, de rectification, d'effacement, de portabilité et d'opposition se fait directement sur votre appareil (paramètres Android &gt; Applications &gt; VITAL I.A &gt; Stockage &gt; Effacer les données).</p>
+<p>Pour toute question : <a href="mailto:onnoff1975@gmail.com">onnoff1975@gmail.com</a>.</p>
+
+<h2 id="geoloc">9. Géolocalisation et numéros d'urgence</h2>
+<p>La géolocalisation est utilisée uniquement pour rechercher les défibrillateurs (DAE) et hôpitaux d'urgence à proximité. Elle est <strong>désactivable</strong> à tout moment (paramètres Android &gt; Permissions). Aucune position n'est enregistrée ni transmise à l'Éditeur.</p>
+<p>Les requêtes de POI (points d'intérêt) sont envoyées à l'API publique <strong>OpenStreetMap Overpass</strong> (<a href="https://overpass-api.de/">overpass-api.de</a>) et soumises à leur propre politique. L'Éditeur n'a pas accès à ces requêtes.</p>
+<p>Les numéros d'urgence affichés (15/18/112, 911, 119, 102, etc.) sont déterminés en fonction du pays détecté par la SIM ou la locale du système. Ils sont fournis à titre indicatif. <strong>L'utilisateur est seul responsable de composer le bon numéro en fonction de sa localisation réelle.</strong></p>
+
+<h2 id="photos">10. Photos et exports PDF</h2>
+<p>L'Application permet à l'utilisateur d'attacher des photos (ordonnance, ECG, etc.) à un bilan et de générer un PDF. Ces fichiers sont stockés localement dans le sandbox de l'application.</p>
+<p>L'utilisateur reste <strong>seul responsable</strong> :</p>
+<ul>
+    <li>du contenu des photos et bilans saisis ;</li>
+    <li>du recueil du consentement éclairé du patient avant toute photo ;</li>
+    <li>de la transmission éventuelle du PDF par email ou autre canal ;</li>
+    <li>du respect du secret médical et professionnel.</li>
 </ul>
 
-<h2>5. Destinataires et sous-traitants</h2>
+<h2 id="audio">11. Bande son et synthèse vocale</h2>
+<p>L'Application utilise la synthèse vocale (TextToSpeech) du système Android pour le mode guidé I.A des tutos. Aucun audio n'est enregistré ni transmis. La bande son d'introduction est lue localement et désactivable dans les Réglages.</p>
+
+<h2 id="propriete">12. Propriété intellectuelle</h2>
+<p>L'Application, son code source, son design, ses textes, ses icônes, ses schémas anatomiques, son logo « VITAL I.A », ainsi que l'ensemble des éléments la composant, sont la propriété exclusive de l'Éditeur et sont protégés par le Code de la propriété intellectuelle français et international.</p>
+<p>Les images anatomiques, schémas ECG et illustrations sont fournis sous licence d'usage strictement privé. Toute reproduction, diffusion ou utilisation commerciale sans accord écrit est interdite.</p>
+<p>Les marques tierces citées (Schiller, Epipen, Anapen, Ventoline, Salbutamol, Glucagon) appartiennent à leurs détenteurs respectifs et ne sont mentionnées qu'à titre informatif et pédagogique.</p>
+
+<h2 id="responsabilite">13. Limitation de responsabilité</h2>
+<p>L'Application est fournie « <strong>en l'état</strong> » (« as is »), sans garantie expresse ou implicite, notamment d'absence d'erreur, d'aptitude à un usage particulier, ou de conformité aux dernières recommandations médicales.</p>
+<p>Dans toute la mesure permise par la loi, l'Éditeur ne saurait être tenu responsable :</p>
 <ul>
-  <li><strong>OpenStreetMap Foundation</strong> — fournisseur de l'API Overpass
-      utilisée pour récupérer la liste des DAE et services d'urgence à proximité
-      (la position GPS est envoyée à la requête, mais aucune autre donnée).
-      <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">wiki.osmfoundation.org/wiki/Privacy_Policy</a></li>
-  <li><strong>Google (Play Services Location, SpeechRecognizer)</strong> —
-      services natifs Android utilisés pour obtenir la position GPS et la
-      reconnaissance vocale. Aucune donnée n'est transmise à BilanAmbu par
-      ces services. Voir
-      <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+    <li>de tout dommage direct ou indirect résultant de l'utilisation, du dysfonctionnement ou de l'indisponibilité de l'Application ;</li>
+    <li>des conséquences cliniques d'une décision prise sur la base d'informations affichées par l'Application ;</li>
+    <li>de la perte de données stockées localement (l'utilisateur est invité à exporter régulièrement ses bilans en PDF) ;</li>
+    <li>des actes ou omissions de tiers (Google Play, OpenStreetMap, etc.).</li>
 </ul>
-<p>
-<strong>L'éditeur (Onn-Off) ne reçoit aucune donnée.</strong> L'application
-n'envoie aucune information à un serveur contrôlé par l'éditeur.
-</p>
+<p>L'utilisateur reconnaît utiliser l'Application sous sa seule et entière responsabilité.</p>
 
-<h2>6. Durée de conservation</h2>
+<h2 id="modifications">14. Modifications des CGU</h2>
+<p>L'Éditeur se réserve le droit de modifier les présentes CGU à tout moment, notamment pour s'adapter à l'évolution de l'Application ou de la législation. La date de dernière mise à jour est indiquée en tête de page. La poursuite de l'utilisation après modification vaut acceptation des nouvelles CGU.</p>
+
+<h2 id="resiliation">15. Résiliation</h2>
+<p>L'utilisateur peut désinstaller l'Application à tout moment, ce qui met fin à son usage. L'Éditeur peut, sans préavis, suspendre ou retirer l'Application en cas de manquement aux CGU ou pour des raisons techniques, légales ou commerciales.</p>
+<p>L'abonnement Premium prend fin selon les conditions de Google Play.</p>
+
+<h2 id="loi">16. Droit applicable et juridiction</h2>
+<p>Les présentes CGU sont régies par le <strong>droit français</strong>.</p>
+<p>Tout litige relatif à leur formation, exécution ou interprétation sera soumis, après tentative de résolution amiable, à la compétence exclusive des tribunaux français du ressort du siège de l'Éditeur, sauf disposition légale impérative contraire (notamment pour les consommateurs résidant dans un autre État de l'Union européenne).</p>
+
+<h2 id="contact">17. Contact</h2>
+<p>Pour toute question, demande, signalement de bug, ou exercice de vos droits :</p>
 <ul>
-  <li>Fiches, formations, réglages : jusqu'à leur suppression par l'utilisateur ou la désinstallation de l'application</li>
-  <li>Position GPS : non conservée (utilisée à la volée)</li>
-  <li>Audio : non conservé par l'application</li>
+    <li>Email : <a href="mailto:onnoff1975@gmail.com">onnoff1975@gmail.com</a></li>
+    <li>Éditeur : Onn-Off Studio</li>
 </ul>
 
-<h2>7. Vos droits (RGPD)</h2>
-<p>Conformément au Règlement Général sur la Protection des Données, vous avez le droit :</p>
-<ul>
-  <li>d'accéder à vos données — historique des fiches dans l'application</li>
-  <li>de les rectifier — édition libre de chaque fiche</li>
-  <li>de les effacer (droit à l'oubli) — suppression unitaire ou désinstallation</li>
-  <li>à la portabilité — export PDF de chaque fiche</li>
-  <li>de retirer votre consentement — révocation des permissions dans les paramètres Android</li>
-  <li>d'introduire une réclamation auprès de la CNIL
-      (<a href="https://www.cnil.fr">www.cnil.fr</a>)</li>
-</ul>
-
-<p>
-Pour toute question complémentaire, contactez-nous à
-<a href="mailto:onnoff1975@gmail.com">onnoff1975@gmail.com</a>.
-</p>
-
-<h2>8. Cookies et traceurs</h2>
-<p>
-L'application n'utilise <strong>aucun cookie ni traceur publicitaire</strong>.
-Aucun identifiant publicitaire (Advertising ID) n'est lu ni transmis.
-</p>
-
-<h2>9. Avertissement médical</h2>
-<p>
-BilanAmbu <strong>n'est pas un dispositif médical</strong> au sens de la directive
-93/42/CEE. C'est un outil personnel de saisie et d'aide-mémoire. Il ne remplace
-en aucun cas le jugement clinique d'un professionnel formé ni les protocoles
-officiels de votre service.
-</p>
-
-<h2>10. Modifications</h2>
-<p>
-Cette politique peut être modifiée. Toute modification substantielle sera
-notifiée dans l'application. La date en haut de cette page indique la dernière
-mise à jour.
-</p>
-
-<h2>11. Contact</h2>
-<p>
-Pour toute question : <a href="mailto:onnoff1975@gmail.com">onnoff1975@gmail.com</a>
-</p>
+<footer>
+    <p>© 2026 Onn-Off Studio — VITAL I.A. Tous droits réservés.<br>
+    <a href="https://play.google.com/store/apps/details?id=fr.ambu.bilan">Télécharger sur Google Play</a></p>
+</footer>
 
 </body>
 </html>
