@@ -20,7 +20,7 @@ VITAL I.A est l'assistant médical intelligent pour les gestes qui sauvent.
 
 ## 📄 Liens
 
-- **CGU + Politique de confidentialité** : [privacy.html](https://olivieronno-svg.github.io/bilanambu/privacy.html)
+- **CGU + Politique de confidentialité** : [privacy.html](https://olivieronno-svg.github.io/vital-ia/privacy.html)
 - **Application Play Store** : [Télécharger VITAL I.A](https://play.google.com/store/apps/details?id=fr.ambu.bilan)
 
 ## 🏢 Éditeur
