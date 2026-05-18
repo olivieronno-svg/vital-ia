@@ -107,7 +107,7 @@
 <header>
     <h1>VITAL I.A — Conditions Générales d'Utilisation et Politique de confidentialité</h1>
     <p class="meta">
-        Dernière mise à jour : <strong>10 mai 2026</strong> · Version 1.5.65<br>
+        Dernière mise à jour : <strong>18 mai 2026</strong> · Version 1.5.96<br>
         Éditeur : <strong>Onn-Off Studio</strong> · Contact : <a href="mailto:onnoff1975@gmail.com">onnoff1975@gmail.com</a>
     </p>
 </header>
@@ -163,7 +163,7 @@
 </ul>
 
 <h2 id="acces">3. Accès à l'application et compte</h2>
-<p>L'Application est téléchargeable gratuitement sur le Google Play Store. Aucun compte n'est requis pour utiliser les fonctions gratuites. Certaines fonctions avancées sont accessibles via un abonnement Premium (voir article 7).</p>
+<p>L'Application est téléchargeable gratuitement sur le Google Play Store. Aucun compte n'est requis pour utiliser les fonctions de base. La création d'un <strong>compte utilisateur facultatif</strong> (via Google Sign-In / Firebase Authentication) peut être proposée pour accéder à certaines fonctions liées au compte (voir article 8.2). Certaines fonctions avancées sont accessibles via un abonnement Premium (voir article 7).</p>
 <p>L'utilisation de l'Application nécessite un appareil Android 8.0 (API 26) ou supérieur, avec connexion Internet pour la géolocalisation et les mises à jour cartographiques.</p>
 
 <h2 id="licence">4. Licence d'utilisation</h2>
@@ -212,18 +212,38 @@
 <h2 id="donnees">8. Données personnelles et confidentialité</h2>
 <p>L'Éditeur respecte le Règlement Général sur la Protection des Données (RGPD, UE 2016/679) et la Loi Informatique et Libertés française.</p>
 
-<h3>8.1 Données stockées localement</h3>
-<p>Toutes les données saisies dans l'Application (bilans, identifiants patients, photos, paramètres) sont stockées <strong>exclusivement en local</strong> sur l'appareil de l'utilisateur, dans une base Room SQLite chiffrée par le système Android. <strong>Aucune donnée n'est transmise à un serveur de l'Éditeur.</strong></p>
+<h3>8.1 Données cliniques et bilans — stockage local</h3>
+<p>Les données cliniques saisies dans un bilan (identifiants du patient, paramètres vitaux, bilan lésionnel, photos jointes, exports PDF) sont enregistrées <strong>localement</strong> sur l'appareil de l'utilisateur, dans une base Room SQLite. Ces données <strong>ne sont ni collectées par l'Éditeur ni synchronisées dans le cloud par l'Application</strong>. Leur transmission éventuelle (envoi du PDF par email) résulte de la seule action volontaire de l'utilisateur (voir article 10).</p>
 
-<h3>8.2 Données collectées par Google Play</h3>
+<h3>8.2 Services Google Firebase</h3>
+<p>L'Application intègre des services fournis par Google (Google Ireland Limited / Google LLC) via la plateforme Firebase :</p>
+<ul>
+    <li><strong>Firebase Authentication</strong> et <strong>Google Sign-In</strong> : création et gestion d'un <strong>compte utilisateur facultatif</strong> (adresse e-mail, identifiant de compte Google, jeton d'authentification) permettant l'accès aux fonctions liées au compte ;</li>
+    <li><strong>Cloud Firestore</strong> : stockage cloud des données de compte et de préférences utilisateur (<strong>à l'exclusion des données cliniques de bilan</strong>, qui restent strictement locales — cf. 8.1) ;</li>
+    <li><strong>Firebase Analytics</strong> : statistiques d'usage agrégées (événements d'utilisation, modèle d'appareil, version de l'Application, langue, pays approximatif) à des fins de mesure d'audience et d'amélioration ;</li>
+    <li><strong>Diagnostics et sessions Firebase</strong> : rapports techniques de stabilité et de session destinés à la fiabilité de l'Application ;</li>
+    <li><strong>Identifiant publicitaire Android</strong> : susceptible d'être collecté par les bibliothèques Google à des fins de mesure. L'Application <strong>n'affiche aucune publicité</strong> et ne réalise aucun ciblage ni profilage publicitaire.</li>
+</ul>
+<p>Ces traitements sont régis par la <a href="https://policies.google.com/privacy">politique de confidentialité de Google</a> et la <a href="https://firebase.google.com/support/privacy">documentation Firebase relative à la confidentialité</a>. Les données peuvent être traitées en dehors de l'Union européenne par Google, sur la base des clauses contractuelles types de la Commission européenne.</p>
+<p>Bases légales (RGPD) : exécution du service demandé pour le compte utilisateur (art. 6.1.b) ; intérêt légitime de l'Éditeur à assurer le fonctionnement, la sécurité et l'amélioration de l'Application pour les statistiques et diagnostics (art. 6.1.f).</p>
+
+<h3>8.3 Données de paiement (Google Play)</h3>
 <p>L'achat d'un abonnement Premium est traité par Google Play (Google LLC). Les données de paiement sont régies par la <a href="https://policies.google.com/privacy">politique de confidentialité de Google</a>. L'Éditeur reçoit uniquement un statut d'abonnement (actif/expiré), sans informations bancaires.</p>
 
-<h3>8.3 Données techniques (analytics)</h3>
-<p>L'Application <strong>ne contient aucun traceur</strong>, aucune publicité, aucune analyse comportementale. Aucun SDK tiers (Firebase Analytics, Crashlytics, etc.) n'est intégré.</p>
+<h3>8.4 Absence de publicité</h3>
+<p>L'Application <strong>n'affiche aucune publicité</strong>, ne pratique aucun profilage publicitaire et ne revend aucune donnée à des tiers à des fins de marketing.</p>
 
-<h3>8.4 Vos droits RGPD</h3>
-<p>Comme aucune donnée personnelle n'est collectée par l'Éditeur, l'exercice des droits d'accès, de rectification, d'effacement, de portabilité et d'opposition se fait directement sur votre appareil (paramètres Android &gt; Applications &gt; VITAL I.A &gt; Stockage &gt; Effacer les données).</p>
-<p>Pour toute question : <a href="mailto:onnoff1975@gmail.com">onnoff1975@gmail.com</a>.</p>
+<h3>8.5 Conservation et sécurité</h3>
+<p>Les données de compte et les statistiques sont conservées le temps nécessaire aux finalités décrites, puis supprimées ou anonymisées. Les données cliniques locales sont conservées jusqu'à leur effacement par l'utilisateur. Les échanges réseau sont chiffrés (HTTPS/TLS).</p>
+
+<h3>8.6 Vos droits RGPD</h3>
+<p>Vous disposez des droits d'accès, de rectification, d'effacement, de limitation, de portabilité et d'opposition :</p>
+<ul>
+    <li><strong>Données cliniques locales</strong> : effaçables directement sur l'appareil (paramètres Android &gt; Applications &gt; VITAL I.A &gt; Stockage &gt; Effacer les données) ;</li>
+    <li><strong>Compte et données Firebase</strong> : suppression du compte depuis l'Application, ou sur demande à <a href="mailto:onnoff1975@gmail.com">onnoff1975@gmail.com</a> ;</li>
+    <li>Vous pouvez à tout moment réinitialiser ou supprimer l'identifiant publicitaire dans les paramètres Android (Confidentialité &gt; Annonces).</li>
+</ul>
+<p>Pour exercer vos droits ou pour toute question : <a href="mailto:onnoff1975@gmail.com">onnoff1975@gmail.com</a>. Vous avez également le droit d'introduire une réclamation auprès de la CNIL (<a href="https://www.cnil.fr">www.cnil.fr</a>).</p>
 
 <h2 id="geoloc">9. Géolocalisation et numéros d'urgence</h2>
 <p>La géolocalisation est utilisée uniquement pour rechercher les défibrillateurs (DAE) et hôpitaux d'urgence à proximité. Elle est <strong>désactivable</strong> à tout moment (paramètres Android &gt; Permissions). Aucune position n'est enregistrée ni transmise à l'Éditeur.</p>
