@@ -260,8 +260,14 @@
     <li>du respect du secret médical et professionnel.</li>
 </ul>
 
-<h2 id="audio">11. Bande son et synthèse vocale</h2>
-<p>L'Application utilise la synthèse vocale (TextToSpeech) du système Android pour le mode guidé I.A des tutos. Aucun audio n'est enregistré ni transmis. La bande son d'introduction est lue localement et désactivable dans les Réglages.</p>
+<h2 id="audio">11. Microphone, synthèse vocale et bande son</h2>
+<p>L'Application utilise la synthèse vocale (TextToSpeech) du système Android pour le mode guidé I.A des tutos. La bande son d'introduction est lue localement et désactivable dans les Réglages.</p>
+<p>L'Application utilise le <strong>microphone</strong> (autorisation <code>RECORD_AUDIO</code>) pour deux fonctions, uniquement lorsque l'utilisateur les active :</p>
+<ul>
+    <li><strong>commandes vocales</strong> : pilotage mains-libres du mode guidé (ex. passer ou répéter une étape) ;</li>
+    <li><strong>dictée du bilan</strong> : saisie vocale de champs du bilan ambulancier, transcrits en texte.</li>
+</ul>
+<p>La reconnaissance vocale s'effectue <strong>intégralement sur l'appareil</strong> (traitement hors ligne, sur le terminal). <strong>Aucun enregistrement audio n'est conservé, et aucun flux audio n'est transmis</strong> à l'Éditeur ni à un tiers. Le micro n'est actif que pendant l'usage de ces fonctions et l'autorisation est révocable à tout moment (paramètres Android &gt; Autorisations).</p>
 
 <h2 id="propriete">12. Propriété intellectuelle</h2>
 <p>L'Application, son code source, son design, ses textes, ses icônes, ses schémas anatomiques, son logo « VITAL I.A », ainsi que l'ensemble des éléments la composant, sont la propriété exclusive de l'Éditeur et sont protégés par le Code de la propriété intellectuelle français et international.</p>
