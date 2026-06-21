@@ -107,7 +107,7 @@
 <header>
     <h1>VITAL I.A — Conditions Générales d'Utilisation et Politique de confidentialité</h1>
     <p class="meta">
-        Dernière mise à jour : <strong>21 mai 2026</strong> · Version 1.5.98<br>
+        Dernière mise à jour : <strong>21 juin 2026</strong> · Applicable aux versions Android et iOS<br>
         Éditeur : <strong>Onn-Off Studio</strong> · Contact : <a href="mailto:onnoff1975@gmail.com">onnoff1975@gmail.com</a>
     </p>
 </header>
@@ -163,8 +163,8 @@
 </ul>
 
 <h2 id="acces">3. Accès à l'application et compte</h2>
-<p>L'Application est téléchargeable gratuitement sur le Google Play Store. Aucun compte n'est requis pour utiliser les fonctions de base. La création d'un <strong>compte utilisateur facultatif</strong> (via Google Sign-In / Firebase Authentication) peut être proposée pour accéder à certaines fonctions liées au compte (voir article 8.2). Certaines fonctions avancées sont accessibles via un abonnement Premium (voir article 7).</p>
-<p>L'utilisation de l'Application nécessite un appareil Android 8.0 (API 26) ou supérieur, avec connexion Internet pour la géolocalisation et les mises à jour cartographiques.</p>
+<p>L'Application est téléchargeable gratuitement sur le <strong>Google Play Store</strong> (version Android) et sur l'<strong>App Store d'Apple</strong> (version iOS). Aucun compte n'est requis pour utiliser les fonctions de base. Sur la version Android, la création d'un <strong>compte utilisateur facultatif</strong> (via Google Sign-In / Firebase Authentication) peut être proposée pour accéder à certaines fonctions liées au compte (voir article 8.2) ; la <strong>version iOS fonctionne sans aucun compte</strong>, toutes les données restant sur l'appareil. Certaines fonctions avancées sont accessibles via un abonnement Premium (voir article 7).</p>
+<p>L'utilisation de l'Application nécessite un appareil <strong>Android 8.0 (API 26) ou supérieur</strong>, ou un appareil <strong>iOS 16 ou supérieur</strong>, avec connexion Internet pour la géolocalisation et les mises à jour cartographiques.</p>
 
 <h2 id="licence">4. Licence d'utilisation</h2>
 <p>L'Éditeur concède à l'utilisateur une licence personnelle, non exclusive, non transférable, révocable, limitée à un usage strictement privé et non commercial, sur l'appareil personnel de l'utilisateur.</p>
@@ -194,7 +194,7 @@
 <p>Les calculs et alertes (autonomie O₂, scores cliniques, FC/FR, etc.) sont donnés à titre <strong>indicatif</strong>. L'utilisateur est seul responsable de la vérification des résultats avant tout usage clinique.</p>
 
 <h2 id="premium">7. Abonnement Premium</h2>
-<p>Certaines fonctionnalités sont accessibles via un abonnement Premium souscrit via Google Play (Google Play Billing) :</p>
+<p>Certaines fonctionnalités sont accessibles via un abonnement Premium ou un achat « à vie », souscrit via <strong>Google Play (Google Play Billing)</strong> sur Android ou via l'<strong>App Store (Apple StoreKit)</strong> sur iOS :</p>
 <ul>
     <li>Calculateur d'autonomie O₂ ;</li>
     <li>Fréquence cardiaque et respiratoire tactiles ;</li>
@@ -206,8 +206,12 @@
     <li>Calendrier des recyclages ;</li>
     <li>Historique illimité et export PDF.</li>
 </ul>
-<p>Le tarif est affiché dans l'Application au moment de la souscription. L'abonnement est <strong>auto-renouvelable</strong> selon les conditions de Google Play. La gestion (résiliation, remboursement) s'effectue exclusivement depuis votre compte Google Play : <a href="https://play.google.com/store/account/subscriptions">play.google.com/store/account/subscriptions</a>.</p>
-<p>Les conditions de remboursement applicables sont celles de Google Play Store. L'Éditeur ne procède à aucun remboursement direct.</p>
+<p>Le tarif est affiché dans l'Application au moment de la souscription. Les abonnements sont <strong>auto-renouvelables</strong> selon les conditions de la plateforme de distribution. La gestion (résiliation, remboursement) s'effectue exclusivement depuis votre compte :</p>
+<ul>
+    <li><strong>Android</strong> : compte Google Play — <a href="https://play.google.com/store/account/subscriptions">play.google.com/store/account/subscriptions</a> ;</li>
+    <li><strong>iOS</strong> : votre identifiant Apple — Réglages &gt; [votre nom] &gt; Abonnements (ou App Store &gt; photo de profil &gt; Abonnements).</li>
+</ul>
+<p>Les conditions de remboursement applicables sont celles du store concerné (Google Play ou App Store d'Apple). L'Éditeur ne procède à aucun remboursement direct.</p>
 
 <h2 id="donnees">8. Données personnelles et confidentialité</h2>
 <p>L'Éditeur respecte le Règlement Général sur la Protection des Données (RGPD, UE 2016/679) et la Loi Informatique et Libertés française.</p>
@@ -215,8 +219,8 @@
 <h3>8.1 Données cliniques et bilans — stockage local</h3>
 <p>Les données cliniques saisies dans un bilan (identifiants du patient, paramètres vitaux, bilan lésionnel, photos jointes, exports PDF) sont enregistrées <strong>localement</strong> sur l'appareil de l'utilisateur, dans une base Room SQLite. Ces données <strong>ne sont ni collectées par l'Éditeur ni synchronisées dans le cloud par l'Application</strong>. Leur transmission éventuelle (envoi du PDF par email) résulte de la seule action volontaire de l'utilisateur (voir article 10).</p>
 
-<h3>8.2 Services Google Firebase</h3>
-<p>L'Application intègre des services fournis par Google (Google Ireland Limited / Google LLC) via la plateforme Firebase :</p>
+<h3>8.2 Services Google Firebase (version Android)</h3>
+<p>La <strong>version Android</strong> de l'Application intègre des services fournis par Google (Google Ireland Limited / Google LLC) via la plateforme Firebase. <em>La version iOS n'intègre aucun de ces services : ni compte, ni Firebase, ni outil d'analyse, et ne transmet aucune donnée d'usage à l'Éditeur (voir 8.7).</em> Sur Android :</p>
 <ul>
     <li><strong>Firebase Authentication</strong> et <strong>Google Sign-In</strong> : création et gestion d'un <strong>compte utilisateur facultatif</strong> (adresse e-mail, identifiant de compte Google, jeton d'authentification) permettant l'accès aux fonctions liées au compte ;</li>
     <li><strong>Cloud Firestore</strong> : stockage cloud des données de compte et de préférences utilisateur (<strong>à l'exclusion des données cliniques de bilan</strong>, qui restent strictement locales — cf. 8.1) ;</li>
@@ -227,8 +231,8 @@
 <p>Ces traitements sont régis par la <a href="https://policies.google.com/privacy">politique de confidentialité de Google</a> et la <a href="https://firebase.google.com/support/privacy">documentation Firebase relative à la confidentialité</a>. Les données peuvent être traitées en dehors de l'Union européenne par Google, sur la base des clauses contractuelles types de la Commission européenne.</p>
 <p>Bases légales (RGPD) : exécution du service demandé pour le compte utilisateur (art. 6.1.b) ; intérêt légitime de l'Éditeur à assurer le fonctionnement, la sécurité et l'amélioration de l'Application pour les statistiques et diagnostics (art. 6.1.f).</p>
 
-<h3>8.3 Données de paiement (Google Play)</h3>
-<p>L'achat d'un abonnement Premium est traité par Google Play (Google LLC). Les données de paiement sont régies par la <a href="https://policies.google.com/privacy">politique de confidentialité de Google</a>. L'Éditeur reçoit uniquement un statut d'abonnement (actif/expiré), sans informations bancaires.</p>
+<h3>8.3 Données de paiement (Google Play / App Store)</h3>
+<p>L'achat d'un abonnement Premium ou d'une licence « à vie » est traité par <strong>Google Play (Google LLC)</strong> sur Android ou par l'<strong>App Store d'Apple (Apple Inc.)</strong> sur iOS. Les données de paiement sont régies respectivement par la <a href="https://policies.google.com/privacy">politique de confidentialité de Google</a> et la <a href="https://www.apple.com/legal/privacy/fr-ww/">politique de confidentialité d'Apple</a>. L'Éditeur reçoit uniquement un statut d'achat (actif/expiré), sans aucune information bancaire.</p>
 
 <h3>8.4 Absence de publicité</h3>
 <p>L'Application <strong>n'affiche aucune publicité</strong>, ne pratique aucun profilage publicitaire et ne revend aucune donnée à des tiers à des fins de marketing.</p>
@@ -239,15 +243,18 @@
 <h3>8.6 Vos droits RGPD</h3>
 <p>Vous disposez des droits d'accès, de rectification, d'effacement, de limitation, de portabilité et d'opposition :</p>
 <ul>
-    <li><strong>Données cliniques locales</strong> : effaçables directement sur l'appareil (paramètres Android &gt; Applications &gt; VITAL I.A &gt; Stockage &gt; Effacer les données) ;</li>
-    <li><strong>Compte et données Firebase</strong> : suppression du compte depuis l'Application, ou sur demande à <a href="mailto:onnoff1975@gmail.com">onnoff1975@gmail.com</a> ;</li>
+    <li><strong>Données cliniques locales</strong> : effaçables directement sur l'appareil (Android : Paramètres &gt; Applications &gt; VITAL I.A &gt; Stockage &gt; Effacer les données ; iOS : suppression dans l'Application, ou désinstallation de l'app) ;</li>
+    <li><strong>Compte et données Firebase</strong> (version Android uniquement) : suppression du compte depuis l'Application, ou sur demande à <a href="mailto:onnoff1975@gmail.com">onnoff1975@gmail.com</a> ;</li>
     <li>Vous pouvez à tout moment réinitialiser ou supprimer l'identifiant publicitaire dans les paramètres Android (Confidentialité &gt; Annonces).</li>
 </ul>
 <p>Pour exercer vos droits ou pour toute question : <a href="mailto:onnoff1975@gmail.com">onnoff1975@gmail.com</a>. Vous avez également le droit d'introduire une réclamation auprès de la CNIL (<a href="https://www.cnil.fr">www.cnil.fr</a>).</p>
 
+<h3>8.7 Version iOS — fonctionnement 100 % local</h3>
+<p>La <strong>version iOS</strong> de l'Application ne collecte aucune donnée personnelle. L'ensemble des données (bilans, formations, photos jointes, réglages) est stocké <strong>uniquement sur l'appareil</strong>, dans le bac à sable (sandbox) de l'Application. Aucun compte n'est requis, aucun outil d'analyse n'est utilisé, et aucune donnée n'est transmise à l'Éditeur ou à un tiers, à l'exception : (i) de la recherche de points d'intérêt à proximité via Apple Plans (voir article 9) et (ii) du traitement des achats par l'App Store (voir 8.3). La gestion des données s'effectue depuis l'Application, ou via Réglages iOS &gt; Général &gt; Stockage iPhone &gt; VITAL I.A.</p>
+
 <h2 id="geoloc">9. Géolocalisation et numéros d'urgence</h2>
-<p>La géolocalisation est utilisée uniquement pour rechercher les défibrillateurs (DAE) et hôpitaux d'urgence à proximité. Elle est <strong>désactivable</strong> à tout moment (paramètres Android &gt; Permissions). Aucune position n'est enregistrée ni transmise à l'Éditeur.</p>
-<p>Les requêtes de POI (points d'intérêt) sont envoyées à l'API publique <strong>OpenStreetMap Overpass</strong> (<a href="https://overpass-api.de/">overpass-api.de</a>) et soumises à leur propre politique. L'Éditeur n'a pas accès à ces requêtes.</p>
+<p>La géolocalisation est utilisée uniquement pour rechercher les défibrillateurs (DAE) et hôpitaux d'urgence à proximité. Elle est <strong>désactivable</strong> à tout moment (Android : Paramètres &gt; Permissions ; iOS : Réglages &gt; Confidentialité et sécurité &gt; Service de localisation). Aucune position n'est enregistrée ni transmise à l'Éditeur.</p>
+<p>Les requêtes de points d'intérêt (POI) sont traitées par un service cartographique tiers, selon la plateforme : sur <strong>Android</strong>, l'API publique <strong>OpenStreetMap Overpass</strong> (<a href="https://overpass-api.de/">overpass-api.de</a>) ; sur <strong>iOS</strong>, le service <strong>Apple Plans</strong> (MapKit, Apple Inc.). Ces requêtes sont soumises à la politique de confidentialité du service concerné. L'Éditeur n'y a pas accès.</p>
 <p>Les numéros d'urgence affichés (15/18/112, 911, 119, 102, etc.) sont déterminés en fonction du pays détecté par la SIM ou la locale du système. Ils sont fournis à titre indicatif. <strong>L'utilisateur est seul responsable de composer le bon numéro en fonction de sa localisation réelle.</strong></p>
 
 <h2 id="photos">10. Photos et exports PDF</h2>
@@ -305,7 +312,7 @@
 
 <footer>
     <p>© 2026 Onn-Off Studio — VITAL I.A. Tous droits réservés.<br>
-    <a href="https://play.google.com/store/apps/details?id=fr.ambu.bilan">Télécharger sur Google Play</a></p>
+    <a href="https://play.google.com/store/apps/details?id=fr.ambu.bilan">Télécharger sur Google Play</a> · Également disponible sur l'App Store d'Apple</p>
 </footer>
 
 </body>
